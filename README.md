@@ -1,5 +1,5 @@
   <a href="https://github.com/hmseeb/brainyquotes-scraper">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Email&nbsp;Validation&nbsp;Tool&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" alt="Logo">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Bulk&nbsp;Email&nbsp;Validation&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=gradient" alt="Logo">
   </a>
 This Python script validates email addresses from a CSV file and outputs the results to a new CSV file. It uses the `validate_email_address` library to verify each email and `asyncio` for asynchronous processing.
 
