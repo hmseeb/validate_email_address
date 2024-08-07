@@ -1,0 +1,6 @@
+pandas
+validate_email_address
+asyncio
+tqdm
+tk
+py3dns
