@@ -9,7 +9,8 @@ from tkinter import filedialog, messagebox
 
 def validate_email_address(email):
     try:
-        is_valid = validate_email(email, verify=True) is not None
+        is_valid = validate_email(
+            email, check_mx=True, verify=True) is not None
         return is_valid
     except Exception as e:
         print(f"Error validating email {email}: {e}")
@@ -38,7 +39,7 @@ def validate_emails_in_csv(input_csv_path, output_csv_path):
         raise ValueError("The input CSV file must have an 'email' column.")
     df['verified'] = False
     df.head(0).to_csv(output_csv_path, index=False)
-    loop = asyncio.set_event_loop()
+    loop = asyncio.get_event_loop()
     loop.run_until_complete(validate_emails(df, output_csv_path))
 
 
