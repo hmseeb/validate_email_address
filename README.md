@@ -27,7 +27,7 @@ This Python script validates email addresses from a CSV file and outputs the res
 
 2. Install the required Python packages:
     ```bash
-    pip install pandas validate_email_address tqdm
+    pip install -r requirements.txt
     ```
 
 ## Usage
